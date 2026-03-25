@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + CSS + JS</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            color: #333;
+        }
+
+        .nav-links li {
+            font-family: monospace;
+            font-size: 1.5em;
+            /* 2x o M normal */
+            display: inline;
+            /* background: lightblue; */
+            margin: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #c0bd16;
+        }
+
+        nav {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+        }
+
+        .nav-links {
+            position: absolute;
+            top: 10px;
+            left: 200px;
+        }
+
+        button {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+        }
+
+        header div {
+            position: fixed;
+            top: 15px;
+            left: 20px;
+        }
+
+        .titulo {
+            position: absolute;
+            top: 150px;
+            left: 750px;
+        }
+
+        .itens {
+            position: absolute;
+            top: 350px;
+        }
+
+        #um {
+            position: absolute;
+            left: 300px;
+            /* width: 25%; */
+            width: 300px;
+        }
+
+        #dois {
+            position: absolute;
+            left: 600px;
+            top: 550px;
+            /* width: 20%; */
+        }
+
+        #tres {
+            position: absolute;
+            left: 800px;
+            top: 550px;
+            /* width: 20%; */
+        }
+
+        #quatro {
+            position: absolute;
+            left: 300px;
+            top: 550px;
+            /* width: 20%; */
+        }
+
+        #texto {
+            position: absolute;
+            left: 1100px;
+
+            text-align: left;
+        }
+        
+        #avaliacao {
+            display: flex;
+            align-items: center;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="html_aula5_ex1_fig1.svg" alt="ADS logo" style="width: 40px; margin-right: 10px;">
+            <strong>ADS</strong>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li>Pagina incial</li>
+                <li>Produtos</li>
+                <li>Categorias</li>
+                <li>Sobre nós</li>
+                <li>Nos contate</li>
+                <li>Blog</li>
+            </ul>
+        </nav>
+        <button
+            style="background-color: #064e3b; color: white; border-radius: 20px; padding: 10px 20px; border: none;">Efetuar
+            login
+        </button>
+    </header>
+
+    <section class="itens">
+        <article id="um">
+            <img src="cadeira.png" alt="Ícone Sync" height="500px" width="700px">
+        </article>
+
+        <article id="dois">
+            <img src="cadeira2.png" alt="Ícone Sync">
+        </article>
+        
+        <article id="tres">
+            <img src="cadeira3.png" alt="Ícone Sync">
+        </article>
+
+        <article id="quatro">
+            <img src="cadeira4.png" alt="Ícone Sync">
+        </article>
+
+        <aside id="texto">
+            <p>
+                cadeiracadeiracadeiracadeiracadeiracadeiracadeiracadeiracadeiracadeira<br>cadeiracadeiracadeiracadeiracadeiracadeiracadeira<br>
+            </p>
+            <p>200 bilhoes</p>
+            <p>codigo do produto: 676767</p>
+            <div id="avaliacao">
+                <img src="estrela.jpg" width="180px" height="67px" alt="estrela">
+                <p>4,9</p>
+                <p>❤</p>
+            </div>
+            
+            <p>Cupom de desconto</p>
+            <img src="desconto.png" width="450px" height="267px" alt="desconto">
+
+        </aside>
+
+    </section>
+</body>
+
+</html>
