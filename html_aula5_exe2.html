@@ -10,6 +10,7 @@
             font-family: sans-serif;
             text-align: center;
             color: #333;
+            background-color: antiquewhite;
         }
 
         .nav-links li {
@@ -36,16 +37,31 @@
             left: 200px;
         }
 
-        button {
-            position: fixed;
-            top: 15px;
-            right: 20px;
+        .nav-icons {
+            position: absolute;
+            top: 10px;
+            right: 100px;
+        }
+
+        .nav-icons li {
+            display: inline;
+            margin-left: 10px;
+        }
+
+        .nav-icons img {
+            width: 25px;
         }
 
         header div {
             position: fixed;
             top: 15px;
             left: 20px;
+        }
+
+        #aaa {
+            position: absolute;
+            top: 120px;
+            left: 27%;
         }
 
         .titulo {
@@ -57,6 +73,7 @@
         .itens {
             position: absolute;
             top: 350px;
+            
         }
 
         #um {
@@ -66,21 +83,21 @@
             width: 300px;
         }
 
-        #dois {
-            position: absolute;
-            left: 600px;
-            top: 550px;
-            /* width: 20%; */
-        }
-
         #tres {
             position: absolute;
-            left: 800px;
+            left: 500px;
             top: 550px;
             /* width: 20%; */
         }
 
         #quatro {
+            position: absolute;
+            left: 700px;
+            top: 550px;
+            /* width: 20%; */
+        }
+
+        #dois {
             position: absolute;
             left: 300px;
             top: 550px;
@@ -90,7 +107,6 @@
         #texto {
             position: absolute;
             left: 1100px;
-
             text-align: left;
         }
         
@@ -98,6 +114,73 @@
             display: flex;
             align-items: center;
         }
+
+        .descricao {
+            position: absolute;
+            top: 850px;
+            left: 730px;
+            text-align: center;
+            display: flex;
+            gap: 40px;
+        }
+
+        #desc {
+            border: 1px solid #c0bd16;
+            border-radius: 100px;
+            height: 50px;
+            display: flex;
+            justify-content: center; 
+            align-items: center;    
+        }
+
+        .sobre {
+            position: absolute;
+            top: 970px;
+            left: 650px;
+            width: 600px;
+        }
+        .sobre h2 {
+            position: relative;
+            right: 200px;
+        }
+
+        .sobre ol {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sobre li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .comprar {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
+
+        .comprar img {
+            width: 25px;
+        }
+
+        .comprar h2 {
+            font-size: 20px;
+            margin: 0;
+            
+            border: 1px solid #c0bd16;
+            border-radius: 100px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+            color: black;
+        }
+
+        
 
 
 
@@ -107,8 +190,8 @@
 <body>
     <header>
         <div style="display: flex; align-items: center;">
-            <img src="html_aula5_ex1_fig1.svg" alt="ADS logo" style="width: 40px; margin-right: 10px;">
-            <strong>ADS</strong>
+            <img src="https://img.freepik.com/premium-vector/vector-explosion-logo_1092023-5904.jpg?w=360" alt="ADS logo" style="width: 40px; margin-right: 10px;">
+            <strong>Explosao</strong>
         </div>
         <nav>
             <ul class="nav-links">
@@ -119,46 +202,98 @@
                 <li>Nos contate</li>
                 <li>Blog</li>
             </ul>
+
+            <ul class="nav-icons">
+                <li><img src="https://www.svgrepo.com/show/486229/magnifying-glass-backup.svg" alt="lupa"></li>
+                <li><img src="https://www.svgrepo.com/show/532473/heart.svg" alt="coracao"></li>
+                <li><img src="https://www.svgrepo.com/show/299761/basket-commerce-and-shopping.svg" alt="carrinho"></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/512/12828/12828286.png" alt="perfil"></li>
+            </ul>
+
         </nav>
-        <button
-            style="background-color: #064e3b; color: white; border-radius: 20px; padding: 10px 20px; border: none;">Efetuar
-            login
-        </button>
+
+        <h1 id="aaa">Produtos / Placa de video / Detalhes do produto</h1>
+
     </header>
 
     <section class="itens">
         <article id="um">
-            <img src="cadeira.png" alt="Ícone Sync" height="500px" width="700px">
+            <img src="https://images3.kabum.com.br/produtos/fotos/463543/placa-de-video-rx-7600-series-graphics-cards-xfx-amd-radeon-8gb-gddr6-rx-76pqickby_1689273145_gg.jpg" alt="Ícone Sync" height="500px" width="585px">
         </article>
 
         <article id="dois">
-            <img src="cadeira2.png" alt="Ícone Sync">
+            <img src="https://images3.kabum.com.br/produtos/fotos/463543/placa-de-video-rx-7600-series-graphics-cards-xfx-amd-radeon-8gb-gddr6-rx-76pqickby_1687961874_gg.jpg" alt="Ícone Sync" height="200px" width="184px">
         </article>
         
         <article id="tres">
-            <img src="cadeira3.png" alt="Ícone Sync">
+            <img src="https://images3.kabum.com.br/produtos/fotos/463543/placa-de-video-rx-7600-series-graphics-cards-xfx-amd-radeon-8gb-gddr6-rx-76pqickby_1687961875_gg.jpg" alt="Ícone Sync" height="200px" width="184px">
         </article>
 
         <article id="quatro">
-            <img src="cadeira4.png" alt="Ícone Sync">
+            <img src="https://images3.kabum.com.br/produtos/fotos/463543/placa-de-video-rx-7600-series-graphics-cards-xfx-amd-radeon-8gb-gddr6-rx-76pqickby_1687961872_gg.jpg" alt="Ícone Sync" height="200px" width="184px">
         </article>
 
         <aside id="texto">
             <p>
-                cadeiracadeiracadeiracadeiracadeiracadeiracadeiracadeiracadeiracadeira<br>cadeiracadeiracadeiracadeiracadeiracadeiracadeira<br>
+                Placa de Vídeo RX 7600 Series Graphics Cards XFX AMD Radeon, 8GB GDDR6 - RX-76PQICKBY
             </p>
-            <p>200 bilhoes</p>
-            <p>codigo do produto: 676767</p>
+            <p>R$ 1.639,99</p>
+            <p>Vendido e entregue por: Explosao!</p>
             <div id="avaliacao">
-                <img src="estrela.jpg" width="180px" height="67px" alt="estrela">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/009/663/928/small/5-star-rating-review-star-transparent-free-png.png" width="180px" height="100px" alt="estrela">
                 <p>4,9</p>
                 <p>❤</p>
             </div>
-            
-            <p>Cupom de desconto</p>
-            <img src="desconto.png" width="450px" height="267px" alt="desconto">
 
+            <div class="comprar">
+                <h2>Comprar agora</h2>
+                <h2>Adicionar ao carrinho</h2>
+                <img src="https://www.svgrepo.com/show/532473/heart.svg" height="30px" alt="coracao">
+                <img src="https://www.svgrepo.com/show/524956/share-circle.svg" height="30px" alt="compartilhar">
+            </div>
+
+            <p>Cupom de desconto</p>
+            <img src="https://www.svgrepo.com/show/425564/discount-ticket-coupon-ticket-voucher.svg" width="450px" height="267px" alt="desconto">
         </aside>
+
+        <div class="descricao">
+            <h2 id="desc">Descrição</h2>
+            <h2 id="inf">Informações adcionais</h2>
+            <h2 id="rev">Review</h2>
+        </div>
+
+        <div class="sobre">
+            <p>
+                A AMD Radeon RX 7600 é uma placa de vídeo de médio desempenho baseada na arquitetura RDNA 3, ideal para jogos em Full HD com alta qualidade gráfica. Com 8GB de memória GDDR6 e suporte a tecnologias modernas como Ray Tracing e DirectX 12 Ultimate, ela entrega ótima performance para gamers que buscam fluidez e custo-benefício.
+            </p>
+            <h2>Sobre este item</h2>
+
+            <ol>
+                <li>
+                    <p>✔️Desempenho excelente em jogos 1080p</p>
+                </li>
+
+                <li>
+                    <p>✔️8GB de memória GDDR6 para jogos atuais</p>
+                </li>
+
+                <li>
+                    <p>✔️Suporte a Ray Tracing e tecnologias modernas</p>
+                </li>
+
+                <li>
+                    <p>✔️Arquitetura RDNA 3 mais eficiente</p>
+                </li>
+
+                <li>
+                    <p>✔️Ótimo custo-benefício para upgrades</p>
+                </li>
+
+
+
+            </ol>
+        </div>
+        
 
     </section>
 </body>
